@@ -146,7 +146,8 @@ class YouTubeViewer:
 
             # Try to click play button if video is paused
             play_button = self.driver.find_element(By.CLASS_NAME, "ytp-play-button")
-            if play_button.get_attribute("aria-label") and "Play" in play_button.get_attribute("aria-label"):
+            aria_label = play_button.get_attribute("aria-label")
+            if aria_label and "Play" in aria_label:
                 play_button.click()
                 self._log('info', "Clicked play button")
                 time.sleep(2)
