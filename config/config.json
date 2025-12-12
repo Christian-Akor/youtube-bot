@@ -1,0 +1,23 @@
+{
+  "youtube_urls": [
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  ],
+  "proxies": [],
+  "delays": {
+    "min_watch_time": 30,
+    "max_watch_time": 120,
+    "min_delay_between_videos": 5,
+    "max_delay_between_videos": 15
+  },
+  "browser": {
+    "headless": false,
+    "window_size": "1920,1080",
+    "disable_images": false
+  },
+  "rotation": {
+    "rotate_user_agent": true,
+    "rotate_proxy": true
+  },
+  "max_retries": 3,
+  "log_level": "INFO"
+}
